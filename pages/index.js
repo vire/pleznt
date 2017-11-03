@@ -5,7 +5,7 @@ import Layout from '../components/Layout'
 
 const IndexPage = () => (
   <Layout>
-    <div className="IndexPage">
+    <div className="o-container o-container--xsmall IndexPage">
       <div className="IndexPage__logo">
         <Link href="/home">
           <img alt="logo" style={{ boxShadow: '' }} src="/static/logo.png" />

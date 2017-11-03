@@ -17,13 +17,12 @@ const Layout = ({ children }) => (
       <link rel="mask-icon" href="static/safari-pinned-tab.svg" color="#5bbad5" />
       <meta name="theme-color" content="#ffffff" />
     </Head>
-    <main className="o-container o-container--xsmall">{children}</main>
+    <main>{children}</main>
     <style jsx global>
       {`
         body {
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu',
             'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
-          background: #fffce6;
           color: #d8d8d8;
         }
       `}
