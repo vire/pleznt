@@ -1,0 +1,40 @@
+{
+  "name": "pleznt",
+  "version": "1.0.0",
+  "description": "A Hackathon PoC",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vire/pleznt.git"
+  },
+  "keywords": [],
+  "author": "Viliam Elischer <code.vire@gmail.com> (https://github.com/vire)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vire/pleznt/issues"
+  },
+  "homepage": "https://github.com/vire/pleznt#readme",
+  "dependencies": {
+    "next": "4.1.4",
+    "react": "16.0.0",
+    "react-dom": "16.0.0"
+  },
+  "devDependencies": {
+    "prettier": "1.7.4"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "tabWidth": 2,
+    "useTabs": false,
+    "semi": false,
+    "bracketSpacing": true,
+    "jsxBracketSameLine": true,
+    "singleQuote": true,
+    "trailingComma": "all"
+  }
+}
