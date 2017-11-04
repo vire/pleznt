@@ -17,12 +17,18 @@ const data = [
   },
   {
     label: 'Transport',
-    suggestions: ['Parking sharing', 'Free rides', 'Parking payment', 'Order taxis'],
+    suggestions: [
+      'Park sharing',
+      'Ride sharing',
+      'Parking payments',
+      'Order taxis, bus for events',
+      'Request tickets flights, trains, bus',
+    ],
     icon: '🅿️',
   },
   {
     label: 'HR',
-    suggestions: ['Make request'],
+    suggestions: ['Ask for information'],
     icon: '❤️',
   },
   {
@@ -30,10 +36,9 @@ const data = [
     suggestions: ['Check status', 'Find people', 'See activities', 'PowerNap'],
     icon: '🎮',
   },
-
   {
-    label: 'Bookings',
-    suggestions: ['Find and book quickly a meeting room'],
+    label: 'Events',
+    suggestions: ['Find and book quickly a meeting room', 'Workshops', 'Specials'],
     icon: '📅',
   },
   {
