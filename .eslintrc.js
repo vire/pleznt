@@ -31,5 +31,15 @@ module.exports = {
     'react/jsx-closing-tag-location': 'off',
     'react/jsx-curly-brace-presence': 'off',
     'prettier/prettier': 'error',
+    'jsx-a11y/label-has-for': [
+      2,
+      {
+        components: ['Label'],
+        required: {
+          some: ['nesting', 'id'],
+        },
+        allowChildren: false,
+      },
+    ],
   },
 }
