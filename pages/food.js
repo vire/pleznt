@@ -1,24 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
-import MenuIcon from 'react-icons/lib/fa/bars'
-import BackIcon from 'react-icons/lib/fa/arrow-left'
 
 import Layout from '../components/Layout'
+import PageHeader from '../components/PageHeader'
 
 const FoodPage = () => {
   return (
     <Layout>
-      <div className="HomePage__header">
-        <span>
-          <Link href="/home">
-            <BackIcon />
-          </Link>
-        </span>
-        <div style={{ paddingTop: '4px' }}>Food</div>
-        <span>
-          <MenuIcon />
-        </span>
-      </div>
+      <PageHeader pageName={'Food'} />
       <div className="o-container o-container--xsmall">
         <div className="c-card c-card--accordion u-high">
           <input type="checkbox" id="accordion-1" />
@@ -186,44 +175,7 @@ const FoodPage = () => {
         </div>
       </div>
       <style jsx>{`
-        .FoodPage__item {
-          padding: 10px 0px;
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-        }
-
-        .FoodPage__amount-box {
-          max-width: 90px;
-        }
-
-        .HomePage__item {
-          width: 140px;
-          text-align: center;
-          display: flex;
-          margin: 10px;
-          flex-direction: column;
-        }
-
-        .HomePage__logo {
-          width: 50px;
-          height: 50px;
-        }
-
-        .HomePage__icon {
-          background: white;
-          border-radius: 20px;
-          font-size: 64px;
-        }
-
-        .HomePage__label {
-          border-top: 1px solid #f3f3f3;
-          border-bottom: 1px solid #f3f3f3;
-          font-weight: 100;
-          font-size: 11px;
-        }
-
-        .HomePage__header {
+        .FoodPage__header {
           padding: 0 10px;
           height: 50px;
           font-size: 24px;
@@ -235,11 +187,15 @@ const FoodPage = () => {
           justify-content: space-between;
         }
 
-        .HomePage__content {
-          height: 100%;
+        .FoodPage__item {
+          padding: 10px 0px;
           display: flex;
           flex-direction: row;
-          flex-wrap: wrap;
+          justify-content: space-between;
+        }
+
+        .FoodPage__amount-box {
+          max-width: 90px;
         }
       `}</style>
     </Layout>
