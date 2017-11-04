@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import SearchIcon from 'react-icons/lib/fa/search'
 import MenuIcon from 'react-icons/lib/fa/bars'
 
@@ -6,7 +7,21 @@ import Layout from '../components/Layout'
 
 const data = [
   {
+    label: 'Robot',
+    path: '/robot',
+    suggestions: ['Chatbot', 'Ask for help', 'Leave feedback'],
+    icon: '🤖',
+  },
+  {
+    label: 'Human',
+    path: '/human',
+    suggestions: ['Ask for information'],
+    icon: '❤️',
+  },
+
+  {
     label: 'Food',
+    path: '/food',
     suggestions: [
       'Order breakfast pickup',
       'See available snacks',
@@ -16,7 +31,20 @@ const data = [
     icon: '🍳',
   },
   {
+    label: 'Scheduler',
+    path: '/scheduler',
+    suggestions: ['Find and book quickly a meeting room', 'Workshops', 'Specials'],
+    icon: '📅',
+  },
+  {
+    label: 'Navigation',
+    path: '/navigation',
+    suggestions: ['Building plan', 'Departments', 'Seating plan'],
+    icon: '🗺',
+  },
+  {
     label: 'Transport',
+    path: '/transport',
     suggestions: [
       'Park sharing',
       'Ride sharing',
@@ -26,33 +54,29 @@ const data = [
     ],
     icon: '🅿️',
   },
-  {
-    label: 'HR',
-    suggestions: ['Ask for information'],
-    icon: '❤️',
-  },
+
   {
     label: 'Refocusing',
+    path: '/refocusing',
     suggestions: ['Check status', 'Find people', 'See activities', 'PowerNap'],
     icon: '🎮',
   },
+
   {
-    label: 'Events',
-    suggestions: ['Find and book quickly a meeting room', 'Workshops', 'Specials'],
-    icon: '📅',
-  },
-  {
-    label: 'Sports',
-    suggestions: ['Find sparring partner', 'Join team', 'Challenge'],
+    label: 'Activities',
+    path: '/activities',
+    suggestions: ['Sport', 'Find sparring partner', 'Join team', 'Challenge'],
     icon: '🏋️‍',
   },
   {
-    label: 'Parcels',
+    label: 'Packages',
+    path: '/packages',
     suggestions: ['Notifications', 'Payments'],
     icon: '📦',
   },
   {
     label: 'Assistance',
+    path: '/assistance',
     suggestions: ['Order flowers', 'Shopping lists', 'TODO list'],
     icon: '💐',
   },
@@ -60,28 +84,28 @@ const data = [
 
 const HomePage = () => (
   <Layout>
-    <div className="HomePage">
-      <div className="HomePage__header">
-        <span>
-          <SearchIcon />
-        </span>
-        <img className="HomePage__logo" alt="logo" src="/static/logo-white.png" />
-        <span>
-          <MenuIcon />
-        </span>
-      </div>
-      <div className="o-container o-container--xsmall HomePage__content">
-        {data.map(item => {
-          return (
-            <div className="HomePage__item" key={item}>
+    <div className="HomePage__header">
+      <span>
+        <SearchIcon />
+      </span>
+      <img className="HomePage__logo" alt="logo" src="/static/logo-white.png" />
+      <span>
+        <MenuIcon />
+      </span>
+    </div>
+    <div className="o-container o-container--xsmall HomePage__content">
+      {data.map(item => {
+        return (
+          <div className="HomePage__item" key={item.path}>
+            <Link prefetch href={item.path}>
               <span className="HomePage__icon" role="img" aria-label="img">
                 {item.icon}
               </span>
-              <span className="HomePage__label">{item.label}</span>
-            </div>
-          )
-        })}
-      </div>
+            </Link>
+            <span className="HomePage__label">{item.label}</span>
+          </div>
+        )
+      })}
     </div>
     <style jsx>{`
       .HomePage__item {
@@ -104,6 +128,8 @@ const HomePage = () => (
       }
 
       .HomePage__label {
+        border-top: 1px solid #f3f3f3;
+        border-bottom: 1px solid #f3f3f3;
         font-weight: 100;
         font-size: 11px;
       }
