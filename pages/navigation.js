@@ -18,7 +18,7 @@ const OverlayImg = ({ dummyUrl, realUrl, overlay, handleClick }) => (
     {overlay ? (
       <img alt="img" style={{ width: '100%' }} src={dummyUrl} />
     ) : (
-      <img alt="img" style={{ width: '100%' }} src={realUrl} />
+      <img alt="img" src={realUrl} />
     )}
     <style jsx>{`
       .NavPage__overlay {

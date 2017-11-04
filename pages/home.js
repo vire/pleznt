@@ -32,7 +32,7 @@ const data = [
   },
   {
     label: 'Scheduler',
-    path: '/scheduler',
+    path: '/wip',
     suggestions: ['Find and book quickly a meeting room', 'Workshops', 'Specials'],
     icon: '📅',
   },
@@ -44,7 +44,7 @@ const data = [
   },
   {
     label: 'Transport',
-    path: '/transport',
+    path: '/wip',
     suggestions: [
       'Park sharing',
       'Ride sharing',
@@ -57,26 +57,26 @@ const data = [
 
   {
     label: 'Refocusing',
-    path: '/refocusing',
+    path: '/wip',
     suggestions: ['Check status', 'Find people', 'See activities', 'PowerNap'],
     icon: '🎮',
   },
 
   {
     label: 'Activities',
-    path: '/activities',
+    path: '/wip',
     suggestions: ['Sport', 'Find sparring partner', 'Join team', 'Challenge'],
     icon: '🏋️‍',
   },
   {
     label: 'Packages',
-    path: '/packages',
+    path: '/wip',
     suggestions: ['Notifications', 'Payments'],
     icon: '📦',
   },
   {
     label: 'Assistance',
-    path: '/assistance',
+    path: '/wip',
     suggestions: ['Order flowers', 'Shopping lists', 'TODO list'],
     icon: '💐',
   },

@@ -79,9 +79,11 @@ const FoodPage = () => {
               </label>
             </div>
             <div style={{ paddingTop: '10px' }} />
-            <button type="button" className="c-button c-button--block c-button--info">
-              Order
-            </button>
+            <Link href="/thx">
+              <button type="button" className="c-button c-button--block c-button--info">
+                Order
+              </button>
+            </Link>
           </div>
           {/* 2nd section*/}
           <input type="checkbox" id="accordion-2" />
@@ -142,9 +144,11 @@ const FoodPage = () => {
               </label>
             </div>
             <div style={{ paddingTop: '10px' }} />
-            <button type="button" className="c-button c-button--block c-button--info">
-              Order
-            </button>
+            <Link href="/thx">
+              <button type="button" className="c-button c-button--block c-button--info">
+                Order
+              </button>
+            </Link>
           </div>
           {/* 3rd section */}
           <input type="checkbox" id="accordion-3" />
@@ -155,9 +159,11 @@ const FoodPage = () => {
             <small>Specify food type (pizza), amount, preferred restaurant, delivery time </small>
             <textarea className="c-field" placeholder="Type in here..." />
             <div style={{ paddingTop: '10px' }} />
-            <button type="button" className="c-button c-button--block c-button--info">
-              Request
-            </button>
+            <Link href="/thx">
+              <button type="button" className="c-button c-button--block c-button--info">
+                Request
+              </button>
+            </Link>
           </div>
           {/* 4th section */}
           <input type="checkbox" id="accordion-4" />
@@ -171,9 +177,11 @@ const FoodPage = () => {
               </span>
             </div>
             <div style={{ paddingTop: '10px' }} />
-            <button type="button" className="c-button c-button--block c-button--info">
-              Join
-            </button>
+            <Link href="/thx">
+              <button type="button" className="c-button c-button--block c-button--info">
+                Join
+              </button>
+            </Link>
           </div>
         </div>
       </div>
